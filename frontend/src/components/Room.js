@@ -146,7 +146,7 @@ export default class Room extends Component {
         return(
             <Grid container spacing={1}>
                 <Grid item xs={12} align="center">
-                    <Typography variant="h4" component="h4">
+                    <Typography variant="h4" component="h4" style={{color: 'white'}}>
                         Code: {this.roomCode}
                     </Typography>
                 </Grid>

@@ -147,29 +147,31 @@ export default class CreateRoomPage extends Component {
                 </Grid>
                 {/* xs, can also have s m l etc, tells us what the width should be when the size of the window is xs, etc... 12 is the maximum value you can put for the value. */}
                 <Grid item xs={12} align="center">
-                    <Typography component="h4" variant="h4">
+                    <Typography component="h4" variant="h4" style={{color: 'white'}}>
                         {title}
                     </Typography>
                 </Grid>
                 <Grid item xs={12} align="center">
                     <FormControl component="fieldset">
                         <FormHelperText>
-                            <div align="center">
+                            <div align="center" style={{color: 'white'}}>
                                 Guest Control Of Playback
                             </div>
                         </FormHelperText>
                         <RadioGroup row defaultValue={this.props.guestCanPause.toString()} onChange={this.handleGuestCanPauseChange}>
                             <FormControlLabel 
                                 value ='true' 
-                                control={<Radio color='primary'/>}
+                                control={<Radio color='primary' style={{color: 'white'}}/>}
                                 label="Play/Pause"
                                 lavelPlacement="bottom" 
+                                style={{color: 'white'}}
                             />
                             <FormControlLabel 
                                 value ='false' 
-                                control={<Radio color='secondary'/>}
+                                control={<Radio color='secondary' style={{color: 'white'}}/>}
                                 label="No Control"
                                 lavelPlacement="bottom" 
+                                style={{color: 'white'}}
                             />
                         </RadioGroup>
                     </FormControl>
@@ -183,11 +185,11 @@ export default class CreateRoomPage extends Component {
                             defaultValue={this.state.votesToSkip}
                             inputProps={{
                                 min: 1,
-                                style: { textAlign: 'center' } 
+                                style: { textAlign: 'center', color: "white" } 
                             }}
                         />
                         <FormHelperText>
-                            <div align="center">
+                            <div align="center" style={{color: 'white'}}>
                                 Votes Required To Skip Song
                             </div>
                         </FormHelperText>

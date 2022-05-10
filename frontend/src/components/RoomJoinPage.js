@@ -17,12 +17,13 @@ export default class RoomJoinPage extends Component {
         return (
             <Grid container spacing={1}>
                 <Grid item xs={12} align="center">
-                    <Typography variant="h4" component="h4">
+                    <Typography variant="h4" component="h4" style={{color: 'white'}}>
                         Join a Room
                     </Typography>
                 </Grid>
                 <Grid item xs={12} align="center">
                     <TextField 
+                        style={{color: 'white'}}
                         error={this.state.error} 
                         label="Code" 
                         placeholder="Enter a Room Code" 
