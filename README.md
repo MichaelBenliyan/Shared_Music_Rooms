@@ -23,3 +23,8 @@ A user with a Spotify Premium account
 You can also run my Shared Music Rooms project in Gitpod, a free online dev environment for GitHub:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/MichaelBenliyan/Shared_Music_Rooms)
+
+# Screenshots
+![HomePage](Music_Room_Home_Page.png)
+![Create_Room_Page](Music_Room_Create_Room_Page.png)
+![Join_Room_Page](Music_Room_Join_Room_Page.png)
