@@ -8,6 +8,8 @@ from .util import *
 from api.models import Room
 from .models import Votes
 
+#Connection to Spotify API in order handle playback and changes.
+
 class AuthURL(APIView): 
     def get(self, request, format=None): 
         scopes = 'user-read-playback-state user-modify-playback-state user-read-currently-playing'
@@ -116,7 +118,8 @@ class PauseSong(APIView):
             return Response({}, status=status.HTTP_204_NO_CONTENT)
         
         return Response({}, status=status.HTTP_403_FORBIDDEN)
-    
+
+
 class PlaySong(APIView): 
     #put request typically updates information
     def put(self, response, format=None): 
@@ -127,7 +130,8 @@ class PlaySong(APIView):
             return Response({}, status=status.HTTP_204_NO_CONTENT)
         
         return Response({}, status=status.HTTP_403_FORBIDDEN)
-    
+
+#Used after users have agreed to skip a song
 class SkipSong(APIView): 
     def post(self, request, format=None):
         room_code = self.request.session.get('room_code')
